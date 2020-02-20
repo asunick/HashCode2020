@@ -12,7 +12,6 @@ public class Book {
     }
 
     public int getId() {
-        cont++;
         return id;
     }
 
