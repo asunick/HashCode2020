@@ -1,10 +1,11 @@
 public class Book {
+    private static int idCounter = 0;
     private int id;
     private int score;
     private boolean scanned = false;
 
-    public Book(int id, int score) {
-        this.id = id;
+    public Book(int score) {
+        this.id = idCounter++;
         this.score = score;
 
     }
