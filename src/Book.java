@@ -3,6 +3,7 @@ public class Book {
     private int id;
     private int score;
     private boolean scanned = false;
+    private int cont = 0;
 
     public Book(int score) {
         this.id = idCounter++;
@@ -11,6 +12,7 @@ public class Book {
     }
 
     public int getId() {
+        cont++;
         return id;
     }
 
@@ -24,5 +26,9 @@ public class Book {
 
     public void setScanned(boolean scanned) {
         this.scanned = scanned;
+    }
+
+    public int getCont() {
+        return cont;
     }
 }
