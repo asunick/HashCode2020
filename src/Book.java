@@ -30,4 +30,9 @@ public class Book {
     public int getCont() {
         return cont;
     }
+
+    public void addCont() {
+         cont++;
+    }
+
 }

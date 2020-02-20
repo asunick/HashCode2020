@@ -64,6 +64,8 @@ public class Main {
                 List<Book> booksInLibrary= new ArrayList<>();
                 for(int j=0; j<nBooksLibrary;j++){
                     booksInLibrary.add(books.get(line4.values[j]));
+                    books.get(line4.values[j]).addCont();
+
                 }
 
                 libraries[i]=new Library(booksInLibrary,signupProcess,nShip);
